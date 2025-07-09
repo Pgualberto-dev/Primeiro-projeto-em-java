@@ -17,10 +17,33 @@ public class Main {
 
         double imc = peso/Math.pow(altura,2);
 
-        System.out.println(nome);
-        System.out.println("Peso: " + peso);
-        System.out.println("Altura: "+ altura);
-        System.out.printf("IMC: %.2f", + imc);
+
+        if (imc < 18.00){
+
+            System.out.println(nome);
+            System.out.println("Peso: " + peso);
+            System.out.println("Altura: "+ altura);
+            System.out.println(" Você está abaixo do peso");
+            System.out.printf("IMC: %.2f", + imc);
+        } else if (imc > 24.00){
+
+            System.out.println(nome);
+            System.out.println("Peso: " + peso);
+            System.out.println("Altura: "+ altura);
+            System.out.println(" Você está acima do peso");
+            System.out.printf("IMC: %.2f", + imc);
+        }else {
+            System.out.println(nome);
+            System.out.println("Peso: " + peso);
+            System.out.println("Altura: "+ altura);
+            System.out.println(" Você está no peso ideal");
+            System.out.printf("IMC: %.2f", + imc);
+
+        }
+
+
+
+
 
     }
 }
